@@ -736,7 +736,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 8 "substring.l"
-{ printf("Rejected\n"); }
+{ printf("Rejected - Contains \"sthu\"\n"); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
@@ -1766,7 +1766,6 @@ int yywrap() { return 1; }
 
 int main()
 {
-    printf("The substring hardcoded to check is sthu.\n");
     printf("Enter the string: ");
     yylex();   // start analysis
     return 0;
